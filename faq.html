@@ -51,7 +51,7 @@
                 </a>
                 <nav id="navbar" class="navbar">
                     <ul>
-                        <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+                        <li><a class="nav-link scrollto" href="index.html">Home</a></li>
                         <li><a class="nav-link scrollto" href="about.html">About</a></li>
                         <li><a class="nav-link scrollto" href="services.html">Services</a></li>
                         <li><a class="nav-link scrollto" href="team.html">Team</a></li>
@@ -62,57 +62,109 @@
                 <a class="btn-getstarted scrollto" href="signin.html">Sign In</a>
             </div>
         </header><!-- End Header -->
-        <section id="hero-animated" class="hero-animated d-flex align-items-center">
-            <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative"
-                data-aos="zoom-out">
-                <img src="assets/img/hero-carousel/hero-carousel-3.svg" class="img-fluid animated">
-                <h2>Welcome to <span>The CUTS Project</span></h2>
-                <p>The Road To A Cashless Future - Offiline, Secure And Blazing Fast!</p>
-                <div class="d-flex">
-                    <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
-                        class="glightbox btn-watch-video d-flex align-items-center"><i
-                            class="bi bi-play-circle"></i><span>Watch Demo</span></a>
-                </div>
-            </div>
-        </section>
-        <main id="main">
-            <!-- ======= Featured Services Section ======= -->
-            <section id="featured-services" class="featured-services">
-                <div class="container">
-                    <div class="row gy-4">
-                        <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out">
-                            <div class="service-item position-relative">
-                                <div class="icon"><i class="bi bi-activity icon"></i></div>
-                                <h4><a href="" class="stretched-link">Digital</a></h4>
-                                <p>All inclusive digital transaction system for all Indians</p>
-                            </div>
-                        </div><!-- End Service Item -->
-                        <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="200">
-                            <div class="service-item position-relative">
-                                <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
-                                <h4><a href="" class="stretched-link">Offline</a></h4>
-                                <p>Offline based solution to ensure maximum participation</p>
-                            </div>
-                        </div><!-- End Service Item -->
-                        <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="400">
-                            <div class="service-item position-relative">
-                                <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
-                                <h4><a href="" class="stretched-link">Secure</a></h4>
-                                <p>Highly secure NFC based transaction system</p>
-                            </div>
-                        </div><!-- End Service Item -->
-                        <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="600">
-                            <div class="service-item position-relative">
-                                <div class="icon"><i class="bi bi-broadcast icon"></i></div>
-                                <h4><a href="" class="stretched-link">Hassle Free</a></h4>
-                                <p>Simple and Efficient - Made with everyone in mind</p>
-                            </div>
-                        </div><!-- End Service Item -->
+        <!-- ======= F.A.Q Section ======= -->
+        <section id="faq" class="faq m-5" style="padding: 150px 50px 100px 50px;">
+            <div class="container-fluid" data-aos="fade-up">
+        
+                <div class="row gy-4">
+        
+                    <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+        
+                        <div class="content px-xl-5">
+                            <h3>Frequently Asked <strong>Questions</strong></h3>
+                            <p>
+                                Here are solutions of some questions that users may encounter while using our token or box.
+                            </p>
+                        </div>
+        
+                        <div class="accordion accordion-flush px-xl-5" id="faqlist">
+        
+                            <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq-content-1">
+                                        <i class="bi bi-question-circle question-icon"></i>
+                                        When will the amount reflect in my account?
+                                    </button>
+                                </h3>
+                                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                    <div class="accordion-body">
+                                        As soon as you bring the unique ID generated by the website to a shopkeeper or vendor, your account will be recharged with that amount. It will reflect in your account within 5 minutes of recharge.
+                                    </div>
+                                </div>
+                            </div><!-- # Faq item-->
+        
+                            <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq-content-2">
+                                        <i class="bi bi-question-circle question-icon"></i>
+                                        What if I lose my card?
+                                    </button>
+                                </h3>
+                                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                    <div class="accordion-body">
+                                        Report in the website as soon as you find out that you have lost your card. We will block the card associated with your phone number & a new card will be generated with your Id. Your remaining amount will be restored in  that card.
+                                    </div>
+                                </div>
+                            </div><!-- # Faq item-->
+        
+                            <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq-content-3">
+                                        <i class="bi bi-question-circle question-icon"></i>
+                                        Is there an application of CUTS?
+                                    </button>
+                                </h3>
+                                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                    <div class="accordion-body">
+                                        We are currently working on the application. We will launch it as soon as possible.
+                                    </div>
+                                </div>
+                            </div><!-- # Faq item-->
+        
+                            <div class="accordion-item" data-aos="fade-up" data-aos-delay="500">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq-content-4">
+                                        <i class="bi bi-question-circle question-icon"></i>
+                                        How can I locate the nearest CUTS recharge point?
+                                    </button>
+                                </h3>
+                                <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                    <div class="accordion-body">
+                                        <i class="bi bi-question-circle question-icon"></i>
+                                        You can contact us on the provided number or you can simply mail us with your pincode. We will get back to you with the nearest location.
+                                    </div>
+                                </div>
+                            </div><!-- # Faq item-->
+        
+                            <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq-content-5">
+                                        <i class="bi bi-question-circle question-icon"></i>
+                                        Can we use UPI to recharge?
+                                    </button>
+                                </h3>
+                                <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                    <div class="accordion-body">
+                                        Yes, you can use UPI or Netbanking or any of your preferred choice by clicking on the recharge page of our portal.
+                                    </div>
+                                </div>
+                            </div><!-- # Faq item-->
+        
+                        </div>
+        
                     </div>
+        
+                    <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img"
+                        style='background-image: url("assets/img/faq.jpg");'>&nbsp;</div>
                 </div>
-            </section><!-- End Featured Services Section -->
-            <!-- ======= About Section ======= -->
-        </main><!-- End #main -->
+        
+            </div>
+        </section><!-- End F.A.Q Section -->
         <!-- ======= Footer ======= -->
         <footer id="footer" class="footer p-4">
             <div class="footer-content">
