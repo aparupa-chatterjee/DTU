@@ -33,13 +33,17 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet">
     <script>
+        var counter=0;
+
         function func() {
                 // Math.random should be unique because of its seeding algorithm.
                 // Convert it to base 36 (numbers + letters), and grab the first 9 characters
                 // after the decimal.
-                var d = '_' + Math.random().toString(36).substr(2, 9);
-                document.getElementById("demo").innerHTML = d;
-                return false;  
+                if(counter==0){
+                    var d = '_' + Math.random().toString(36).substr(2, 9);
+                    document.getElementById("demo").innerHTML = d;
+                    counter++;
+                }
             };
         
     </script>
@@ -88,7 +92,7 @@
                                         <div class="section-header">
                                             <h1>
                                                
-                                                <button id="demo" type="button" onclick="return func()">Click to get your unique ID</button>
+                                                <p id="demo" type="button" onclick="return func()">Click to get your unique ID</p>
 
                                             </h1>
                                         </div>
