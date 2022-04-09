@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>CUTS: Recharge</title>
+    <title>CUTS: Sign In</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
     <!-- Favicons -->
@@ -33,13 +33,14 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet">
     <script>
-        function validateForm() {
-            var x = document.forms["myForm"]["fname"].value;
-            if (x == "" || x == null) {
-                alert("All the fields must be filled out");
-                return false;
-            }
-        }
+        function func() {
+                // Math.random should be unique because of its seeding algorithm.
+                // Convert it to base 36 (numbers + letters), and grab the first 9 characters
+                // after the decimal.
+                var d = '_' + Math.random().toString(36).substr(2, 9);
+                document.getElementById("demo").innerHTML = d;
+                return false;  
+            };
         
     </script>
     <!-- =======================================================
@@ -61,7 +62,7 @@
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a class="nav-link scrollto" href="index.html">Home</a></li>
-                    <li><a class="nav-link scrollto active" href="recharge.html">Recharge</a></li>
+                    <li><a class="nav-link scrollto" href="recharge.html">Recharge</a></li>
                     <li><a class="nav-link scrollto" href="team.html">Team</a></li>
                     <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
                 </ul>
@@ -84,63 +85,16 @@
                                 </div>
                                 <div class="col-md-6 col-lg-7 d-flex align-items-center">
                                     <div class="card-body p-4 p-lg-5 text-black">
+                                        <div class="section-header">
+                                            <h1>
+                                               
+                                                <button id="demo" type="button" onclick="return func()">Click to get your unique ID</button>
 
-                                        <form name="myForm" action="/action_page.php" onsubmit="return validateForm()"
-                                            method="post" required>
-
-
-                                            <h5 class="fw-normal mb-2 pb-5" style="letter-spacing: 1px;">
-                                                <h3>Recharge Here</h3>
-                                            </h5>
-                                            <div class="pt-5">
-                                                <input type="number" id="form2Example17" class="form-control form-control-lg" name="fname"
-                                                    placeholder="Enter The Amount" />
-                                            
-                                            </div>
-                                            <div class="row mt-3">
-                                                <div class="col-lg-8">
-                                                    <input type="number" id="form2Example17"
-                                                        class="form-control form-control-lg" name="fname"
-                                                        placeholder="Enter Your Mobile Number" />
-
-                                                </div>
-                                                <div class="d-inline col-lg-4">
-                                                    <button class="btn btn-success btn-lg btn-block" type="submit">Send
-                                                        OTP</button>
+                                            </h1>
+                                        </div>
+                                        
                                                 </div>
                                             </div>
-                                            
-                                            <div
-                                                class="d-flex justify-content-center align-items-center container mt-5 ">
-                                                <div class="card border-0">
-                                                    <span class="mobile-text">Enter the code we just send on your mobile
-                                                        phone <b class="text-danger">+91 86684833</b></span>
-                                                    <div class="d-flex flex-rowpt-3 pt-3"><input type="text"
-                                                            class="form-control" autofocus="" placeholder="Enter"><input
-                                                            type="text" class="form-control" placeholder="The"><input
-                                                            type="text" class="form-control" placeholder="Sent"><input
-                                                            type="text" class="form-control" placeholder="OTP">
-                                                    </div>
-                                                    <div class="text-center mt-5"><span
-                                                            class="d-block mobile-text">Don't receive the
-                                                            code?</span><span
-                                                            class="font-weight-bold text-danger cursor">Resend</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-
-                                            <div class="pt-1 mb-2">
-                                                <button class="btn btn-dark btn-lg btn-block" onsubmit="return varID()"
-                                                    type="submit" href="id.html">Proceed</button>
-                                            </div>
-
-
-                                            <br><br><br>
-                                            <a href="terms.html" class="small text-muted">Terms of use.</a>
-                                            <a href="terms.html" class="small text-muted">Privacy policy</a>
-                                        </form>
 
                                     </div>
                                 </div>
