@@ -2792,3 +2792,8 @@ section {
 .cursor {
   cursor: pointer
 }
+@media only screen and (max-width: 600px){
+  a.btn-getstarted.scrollto {
+    font-size: 0.5rem;
+  }
+}
