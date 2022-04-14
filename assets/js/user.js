@@ -1,6 +1,4 @@
 //all fields
-
-
 function validateForm() {
     var x = document.forms["myForm"]["fname"].value;
     if (x == "") {
