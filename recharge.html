@@ -32,7 +32,7 @@
             <div class="container-fluid d-flex align-items-center justify-content-between">
                 <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
                     <img src="assets/img/CUTS_logo1-1.png" alt="">
-                    <h1 class="d-none d-lg-block">The <span class="text-success">CUTS</span><span>.</span></h1>
+                    <h1 class="d-none d-lg-block">The <span class="text-primary">CUTS</span><span>.</span></h1>
                 </a>
                 <nav id="navbar" class="navbar">
                     <ul>
@@ -61,58 +61,46 @@
                                     </div>
                                     <div class="col-md-6 col-lg-7 d-flex align-items-center">
                                         <div class="card-body p-4 p-lg-5 text-black">
-                                            <form name="myForm" action="/action_page.php" method="post" required>
-                                                <h5 class="fw-normal mb-2 pb-5" style="letter-spacing: 1px;">
+                                            <form name="myForm" action="/action_page.php" method="post"  onsubmit="return func()" required >
+                                                <h5 class="fw-normal mb-2 pb-3" style="letter-spacing: 1px;">
                                                     <h3>Recharge Here</h3>
                                                 </h5>
-                                                <div class="pt-5">
-                                                    <input type="number" id="form2Example17"
-                                                        class="form-control form-control-lg" name="fname"
-                                                        placeholder="Enter The Amount" />
+                                                <div class="form-outline mb-2">
+                                                    <input type="number" id="form2Example17" class="form-control form-control-lg" name="fname" placeholder="Enter the Amount"/>
                                                 </div>
                                                 <div class="row mt-3">
                                                     <div class="col-lg-8">
-                                                        <input type="number" id="form2Example17"
-                                                            class="form-control form-control-lg" name="fname"
+                                                        <input type="number" id="form2Example17" class="form-control form-control-lg" name="fname"
                                                             placeholder="Enter Your Mobile Number" />
                                                     </div>
-                                                    <div class="d-inline col-lg-4">
-                                                        <button class="btn btn-success btn-lg btn-block"
-                                                            type="submit">Send OTP</button>
+                                                    <div class="col-lg-4">
+                                                        <button class="btn btn-success btn-lg btn-block" type="button">Send OTP</button>
                                                     </div>
-                                                </div>
-                                                <div
-                                                    class="d-flex justify-content-center align-items-center container mt-5 ">
-                                                    <div class="card border-0">
-                                                        <span class="mobile-text text-center">Enter the code we just
-                                                            send on your mobile phone</span>
-                                                        <div class="d-flex flex-rowpt-3 pt-3">
-                                                            <input type="number" id="text1" maxlength="1"
-                                                                onkeyup="moveCursor(this, 'text2')" class="form-control"
-                                                                autofocus="" name="fname">
-                                                            <input type="number" id="text2" maxlength="1"
-                                                                onkeyup="moveCursor(this, 'text3')" class="form-control"
-                                                                name="fname">
-                                                            <input type="number" id="text3" maxlength="1"
-                                                                onkeyup="moveCursor(this, 'text4')" class="form-control"
-                                                                name="fname">
-                                                            <input type="number" id="text4" maxlength="1"
-                                                                class="form-control" name="fname">
-                                                        </div>
-                                                        <div class="text-center mt-5"><span
-                                                                class="d-block mobile-text">Don't receive the
-                                                                code?</span><span
-                                                                class="font-weight-bold text-danger cursor">Resend</span>
+                                                    <div class="d-flex justify-content-center align-items-center container mt-5 ">
+                                                        <div class="card border-0">
+                                                            <span class="mobile-text text-center">Enter the code we just
+                                                                send on your mobile phone</span>
+                                                            <div class="d-flex flex-rowpt-3 pt-3">
+                                                                <input type="number" id="text1" maxlength="1" onkeyup="moveCursor(this, 'text2')" class="form-control"
+                                                                    autofocus="" name="fname">
+                                                                <input type="number" id="text2" maxlength="1" onkeyup="moveCursor(this, 'text3')" class="form-control"
+                                                                    name="fname">
+                                                                <input type="number" id="text3" maxlength="1" onkeyup="moveCursor(this, 'text4')" class="form-control"
+                                                                    name="fname">
+                                                                <input type="number" id="text4" maxlength="1" class="form-control" name="fname">
+                                                            </div>
+                                                            <div class="text-center mt-5"><span class="d-block mobile-text">Don't receive the
+                                                                    code?</span><span class="font-weight-bold text-danger cursor">Resend</span>
+                                                            </div>
+                                                            <div class="text-center">
+                                                                <button class="btn btn-secondary btn-lg btn-block" id="demo" type="button">Click to get your
+                                                                    unique
+                                                                    ID</p>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <br>
-                                                <div class="text-center">
-                                                    <button class="btn btn-secondary btn-lg btn-block" id="demo"
-                                                        type="button" onclick="return func()">Click to get your unique
-                                                        ID</p>
                                                 </div>
-                                                <br>
                                             </form>
                                         </div>
                                     </div>

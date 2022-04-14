@@ -47,10 +47,10 @@ function checkForm(form) {
 //Id Generator
 var counter = 0;
 function func() {
-    var x = document.forms["myForm"]["fname"].value;
-    if (x == ""){
+    var y = document.forms["myForm"]["fname"].value;
+    if (y == ""){
         alert("Fill all the fields first")
-        return false
+        return false;
         
 
     }
